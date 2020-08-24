@@ -55,7 +55,7 @@ while not converge and i < maxIteraciones:
     for c in range(n):
         waux[c]=w[c]-alpha*sum(aux*x[:,c])
     
-    error=(1/2*m)*sum(pow(aux,2))
+    error=(1/(2*m))*sum(pow(aux,2))
     Eab.append(error)
         
     if ((isclose(w[0],waux[0],rel_tol=1e-9)) and (isclose(w[1], waux[1], rel_tol=1e-9))
