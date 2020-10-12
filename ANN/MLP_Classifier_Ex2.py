@@ -22,10 +22,10 @@ X_test=scaler.transform(X_test)
 
 
 modelo=neural_network.MLPClassifier(
-    hidden_layer_sizes=(54,28),
+    hidden_layer_sizes=(54,27),
     activation='relu',
     learning_rate_init=0.1,
-    max_iter=10,
+    max_iter=100,
     solver='sgd'
     )
 

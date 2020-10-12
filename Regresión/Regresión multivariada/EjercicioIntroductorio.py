@@ -23,7 +23,7 @@ theta2=0
 alpha=0.1
 
 converge=False
-maxIteraciones=1000
+maxIteraciones=100000
 i=0
 
 logE=[]

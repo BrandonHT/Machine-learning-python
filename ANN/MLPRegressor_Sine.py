@@ -10,7 +10,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import sklearn.neural_network
 
-p= np.arange(-2,2,0.1)
+p=np.arange(-2,2,0.1)
 print(p.shape)
 p=p.reshape(-1,1)
 print(p.shape)
@@ -27,8 +27,9 @@ modelo.fit(p,t)
 
 nuevoT=modelo.predict(p)
 nuevoT=nuevoT.reshape(-1,1)
-plt.plot(nuevoT,label='nuevoT)')
+plt.plot(nuevoT,label='nuevoT')
 plt.plot(nuevoT-t, label='nuevoT-t')
+plt.plot(t)
 plt.legend()
 plt.show()
 
