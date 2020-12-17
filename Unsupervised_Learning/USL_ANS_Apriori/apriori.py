@@ -14,5 +14,5 @@ df = pd.DataFrame(te_ary,columns=te.columns_)
 
 items_frecuentes = apriori(df, min_support=0.4, use_colnames=True)
 reglas = association_rules(items_frecuentes, metric="confidence", min_threshold=0.6)
-reglas = reglas.sort_values(['confidence', ascending=[False]])
+reglas = reglas.sort_values(['confidence'], ascending=[False])
 print(reglas.head())
